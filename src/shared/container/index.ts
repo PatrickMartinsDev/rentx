@@ -6,6 +6,9 @@ import { CategoriesRepository } from "../../modules/cars/repositories/implementa
 import { ISpecificationRepository } from "../../modules/cars/repositories/ISpecificationsRepository";
 import { SpecificationsRepository } from "../../modules/cars/repositories/implementations/SpecificationsRepository";
 
+import { IUsersRepository } from "../../modules/accounts/repositories/IUsersrepository";
+import { UsersRepository } from "../../modules/accounts/repositories/implementations/UserRepository";
+
 
 // ICategoriesRepository para dentro do singleton
 container.registerSingleton<ICategoriesRepository>(
@@ -17,4 +20,9 @@ container.registerSingleton<ICategoriesRepository>(
 container.registerSingleton<ISpecificationRepository>(
   "SpecificationsRepository",
   SpecificationsRepository
+);
+
+container.registerSingleton<IUsersRepository>(
+  "UsersRepository",
+  UsersRepository
 )
