@@ -8,7 +8,7 @@ import { SpecificationsRepository } from "../../modules/cars/repositories/implem
 import { CategoriesRepository } from "../../modules/cars/repositories/implementations/CategoriesRepository";
 
 import { UsersRepository } from "../../modules/accounts/repositories/implementations/UsersRepository";
-import { IUsersRepository } from "../../modules/accounts/repositories/IUsersrepository";
+import { IUsersRepository } from "../../modules/accounts/repositories/IUsersRepository";
 
 
 // ICategoriesRepository para dentro do singleton

@@ -1,4 +1,5 @@
 import { inject, injectable } from "tsyringe";
+
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 
 interface IRequest {

@@ -4,9 +4,9 @@ import { CreateCategoryController } from '../modules/cars/useCases/createCategor
 import { ImportCategoryController } from '../modules/cars/useCases/importCategory/importCategoryController';
 import { ListCategoriesController } from '../modules/cars/useCases/listCategories/listCategoriesController';
 
-const categoriesRoutes = Router();
+import multer from 'multer';
 
-const multer = require('multer');
+const categoriesRoutes = Router();
 
 const upload = multer({
   dest: "./tmp",
