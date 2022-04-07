@@ -21,7 +21,7 @@ class SpecificationsRepository implements ISpecificationRepository {
     const specification = this.repository.findOne({
       name,
     });
-    return specification;
+    return new Specification;
   }
 }
 
