@@ -1,4 +1,5 @@
-import { getRepository, Repository } from 'typeorm';
+import { Repository } from 'typeorm';
+import { getRepository } from 'typeorm/globals';
 import { Category } from '../../entities/Category';
 import { ICategoriesRepository } from '../ICategoriesRepository';
 
